@@ -1,0 +1,17 @@
+.swiper-box {
+  width: 100%;
+  height: 30%;
+  overflow: hidden;
+}
+.container-images {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+.container-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  min-width: 100%;
+}
