@@ -2,11 +2,12 @@
   width: 100%;
   height: 30%;
   overflow: hidden;
+  position: relative;
 }
 .container-images {
   display: flex;
   height: 100%;
-  transition: transform 0.5s ease;
+  /* transition: transform 0.5s ease; */
 }
 .container-images img {
   width: 100%;
@@ -14,4 +15,23 @@
   object-fit: cover;
   flex-shrink: 0;
   min-width: 100%;
+}
+.left,
+.right {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: black;
+}
+.left {
+  left: 0;
+}
+.right {
+  right: 0;
 }
